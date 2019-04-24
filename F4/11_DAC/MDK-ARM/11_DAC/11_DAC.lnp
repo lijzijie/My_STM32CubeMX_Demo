@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"11_dac\startup_stm32f407xx.o"
+"11_dac\main.o"
+"11_dac\stm32f4xx_it.o"
+"11_dac\stm32f4xx_hal_msp.o"
+"11_dac\stm32f4xx_hal_dac.o"
+"11_dac\stm32f4xx_hal_dac_ex.o"
+"11_dac\stm32f4xx_hal_tim.o"
+"11_dac\stm32f4xx_hal_tim_ex.o"
+"11_dac\stm32f4xx_hal_rcc.o"
+"11_dac\stm32f4xx_hal_rcc_ex.o"
+"11_dac\stm32f4xx_hal_flash.o"
+"11_dac\stm32f4xx_hal_flash_ex.o"
+"11_dac\stm32f4xx_hal_flash_ramfunc.o"
+"11_dac\stm32f4xx_hal_gpio.o"
+"11_dac\stm32f4xx_hal_dma_ex.o"
+"11_dac\stm32f4xx_hal_dma.o"
+"11_dac\stm32f4xx_hal_pwr.o"
+"11_dac\stm32f4xx_hal_pwr_ex.o"
+"11_dac\stm32f4xx_hal_cortex.o"
+"11_dac\stm32f4xx_hal.o"
+"11_dac\stm32f4xx_hal_exti.o"
+"11_dac\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "11_DAC\11_DAC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "11_DAC.map" -o 11_DAC\11_DAC.axf

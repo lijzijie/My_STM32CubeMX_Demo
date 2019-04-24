@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"08_pwm\startup_stm32f407xx.o"
+"08_pwm\main.o"
+"08_pwm\stm32f4xx_it.o"
+"08_pwm\stm32f4xx_hal_msp.o"
+"08_pwm\stm32f4xx_hal_tim.o"
+"08_pwm\stm32f4xx_hal_tim_ex.o"
+"08_pwm\stm32f4xx_hal_rcc.o"
+"08_pwm\stm32f4xx_hal_rcc_ex.o"
+"08_pwm\stm32f4xx_hal_flash.o"
+"08_pwm\stm32f4xx_hal_flash_ex.o"
+"08_pwm\stm32f4xx_hal_flash_ramfunc.o"
+"08_pwm\stm32f4xx_hal_gpio.o"
+"08_pwm\stm32f4xx_hal_dma_ex.o"
+"08_pwm\stm32f4xx_hal_dma.o"
+"08_pwm\stm32f4xx_hal_pwr.o"
+"08_pwm\stm32f4xx_hal_pwr_ex.o"
+"08_pwm\stm32f4xx_hal_cortex.o"
+"08_pwm\stm32f4xx_hal.o"
+"08_pwm\stm32f4xx_hal_exti.o"
+"08_pwm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "08_PWM\08_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "08_PWM.map" -o 08_PWM\08_PWM.axf

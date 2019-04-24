@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"09_pwm_capture\startup_stm32f407xx.o"
+"09_pwm_capture\main.o"
+"09_pwm_capture\stm32f4xx_it.o"
+"09_pwm_capture\stm32f4xx_hal_msp.o"
+"09_pwm_capture\stm32f4xx_hal_tim.o"
+"09_pwm_capture\stm32f4xx_hal_tim_ex.o"
+"09_pwm_capture\stm32f4xx_hal_uart.o"
+"09_pwm_capture\stm32f4xx_hal_rcc.o"
+"09_pwm_capture\stm32f4xx_hal_rcc_ex.o"
+"09_pwm_capture\stm32f4xx_hal_flash.o"
+"09_pwm_capture\stm32f4xx_hal_flash_ex.o"
+"09_pwm_capture\stm32f4xx_hal_flash_ramfunc.o"
+"09_pwm_capture\stm32f4xx_hal_gpio.o"
+"09_pwm_capture\stm32f4xx_hal_dma_ex.o"
+"09_pwm_capture\stm32f4xx_hal_dma.o"
+"09_pwm_capture\stm32f4xx_hal_pwr.o"
+"09_pwm_capture\stm32f4xx_hal_pwr_ex.o"
+"09_pwm_capture\stm32f4xx_hal_cortex.o"
+"09_pwm_capture\stm32f4xx_hal.o"
+"09_pwm_capture\stm32f4xx_hal_exti.o"
+"09_pwm_capture\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "09_PWM_Capture\09_PWM_Capture.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "09_PWM_Capture.map" -o 09_PWM_Capture\09_PWM_Capture.axf

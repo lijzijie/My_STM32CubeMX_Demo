@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"13_rtc\startup_stm32f407xx.o"
+"13_rtc\main.o"
+"13_rtc\stm32f4xx_it.o"
+"13_rtc\stm32f4xx_hal_msp.o"
+"13_rtc\stm32f4xx_hal_rtc.o"
+"13_rtc\stm32f4xx_hal_rtc_ex.o"
+"13_rtc\stm32f4xx_hal_tim.o"
+"13_rtc\stm32f4xx_hal_tim_ex.o"
+"13_rtc\stm32f4xx_hal_uart.o"
+"13_rtc\stm32f4xx_hal_rcc.o"
+"13_rtc\stm32f4xx_hal_rcc_ex.o"
+"13_rtc\stm32f4xx_hal_flash.o"
+"13_rtc\stm32f4xx_hal_flash_ex.o"
+"13_rtc\stm32f4xx_hal_flash_ramfunc.o"
+"13_rtc\stm32f4xx_hal_gpio.o"
+"13_rtc\stm32f4xx_hal_dma_ex.o"
+"13_rtc\stm32f4xx_hal_dma.o"
+"13_rtc\stm32f4xx_hal_pwr.o"
+"13_rtc\stm32f4xx_hal_pwr_ex.o"
+"13_rtc\stm32f4xx_hal_cortex.o"
+"13_rtc\stm32f4xx_hal.o"
+"13_rtc\stm32f4xx_hal_exti.o"
+"13_rtc\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "13_RTC\13_RTC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "13_RTC.map" -o 13_RTC\13_RTC.axf

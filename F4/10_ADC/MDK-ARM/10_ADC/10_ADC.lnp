@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"10_adc\startup_stm32f407xx.o"
+"10_adc\main.o"
+"10_adc\stm32f4xx_it.o"
+"10_adc\stm32f4xx_hal_msp.o"
+"10_adc\stm32f4xx_hal_adc.o"
+"10_adc\stm32f4xx_hal_adc_ex.o"
+"10_adc\stm32f4xx_hal_tim.o"
+"10_adc\stm32f4xx_hal_tim_ex.o"
+"10_adc\stm32f4xx_hal_uart.o"
+"10_adc\stm32f4xx_hal_rcc.o"
+"10_adc\stm32f4xx_hal_rcc_ex.o"
+"10_adc\stm32f4xx_hal_flash.o"
+"10_adc\stm32f4xx_hal_flash_ex.o"
+"10_adc\stm32f4xx_hal_flash_ramfunc.o"
+"10_adc\stm32f4xx_hal_gpio.o"
+"10_adc\stm32f4xx_hal_dma_ex.o"
+"10_adc\stm32f4xx_hal_dma.o"
+"10_adc\stm32f4xx_hal_pwr.o"
+"10_adc\stm32f4xx_hal_pwr_ex.o"
+"10_adc\stm32f4xx_hal_cortex.o"
+"10_adc\stm32f4xx_hal.o"
+"10_adc\stm32f4xx_hal_exti.o"
+"10_adc\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "10_ADC\10_ADC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "10_ADC.map" -o 10_ADC\10_ADC.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"14_flash_rw\startup_stm32f407xx.o"
+"14_flash_rw\main.o"
+"14_flash_rw\stm32f4xx_it.o"
+"14_flash_rw\stm32f4xx_hal_msp.o"
+"14_flash_rw\stm32f4xx_hal_tim.o"
+"14_flash_rw\stm32f4xx_hal_tim_ex.o"
+"14_flash_rw\stm32f4xx_hal_uart.o"
+"14_flash_rw\stm32f4xx_hal_rcc.o"
+"14_flash_rw\stm32f4xx_hal_rcc_ex.o"
+"14_flash_rw\stm32f4xx_hal_flash.o"
+"14_flash_rw\stm32f4xx_hal_flash_ex.o"
+"14_flash_rw\stm32f4xx_hal_flash_ramfunc.o"
+"14_flash_rw\stm32f4xx_hal_gpio.o"
+"14_flash_rw\stm32f4xx_hal_dma_ex.o"
+"14_flash_rw\stm32f4xx_hal_dma.o"
+"14_flash_rw\stm32f4xx_hal_pwr.o"
+"14_flash_rw\stm32f4xx_hal_pwr_ex.o"
+"14_flash_rw\stm32f4xx_hal_cortex.o"
+"14_flash_rw\stm32f4xx_hal.o"
+"14_flash_rw\stm32f4xx_hal_exti.o"
+"14_flash_rw\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "14_FLASH_RW\14_FLASH_RW.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "14_FLASH_RW.map" -o 14_FLASH_RW\14_FLASH_RW.axf

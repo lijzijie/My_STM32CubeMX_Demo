@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"15_test_project\startup_stm32f407xx.o"
+"15_test_project\main.o"
+"15_test_project\stm32f4xx_it.o"
+"15_test_project\stm32f4xx_hal_msp.o"
+"15_test_project\stm32f4xx_hal_tim.o"
+"15_test_project\stm32f4xx_hal_tim_ex.o"
+"15_test_project\stm32f4xx_hal_rcc.o"
+"15_test_project\stm32f4xx_hal_rcc_ex.o"
+"15_test_project\stm32f4xx_hal_flash.o"
+"15_test_project\stm32f4xx_hal_flash_ex.o"
+"15_test_project\stm32f4xx_hal_flash_ramfunc.o"
+"15_test_project\stm32f4xx_hal_gpio.o"
+"15_test_project\stm32f4xx_hal_dma_ex.o"
+"15_test_project\stm32f4xx_hal_dma.o"
+"15_test_project\stm32f4xx_hal_pwr.o"
+"15_test_project\stm32f4xx_hal_pwr_ex.o"
+"15_test_project\stm32f4xx_hal_cortex.o"
+"15_test_project\stm32f4xx_hal.o"
+"15_test_project\stm32f4xx_hal_exti.o"
+"15_test_project\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "15_TEST_Project\15_TEST_Project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "15_TEST_Project.map" -o 15_TEST_Project\15_TEST_Project.axf

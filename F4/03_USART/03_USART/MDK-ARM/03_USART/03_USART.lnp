@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"03_usart\startup_stm32f407xx.o"
+"03_usart\main.o"
+"03_usart\stm32f4xx_it.o"
+"03_usart\stm32f4xx_hal_msp.o"
+"03_usart\debug_printf.o"
+"03_usart\stm32f4xx_hal_tim.o"
+"03_usart\stm32f4xx_hal_tim_ex.o"
+"03_usart\stm32f4xx_hal_uart.o"
+"03_usart\stm32f4xx_hal_rcc.o"
+"03_usart\stm32f4xx_hal_rcc_ex.o"
+"03_usart\stm32f4xx_hal_flash.o"
+"03_usart\stm32f4xx_hal_flash_ex.o"
+"03_usart\stm32f4xx_hal_flash_ramfunc.o"
+"03_usart\stm32f4xx_hal_gpio.o"
+"03_usart\stm32f4xx_hal_dma_ex.o"
+"03_usart\stm32f4xx_hal_dma.o"
+"03_usart\stm32f4xx_hal_pwr.o"
+"03_usart\stm32f4xx_hal_pwr_ex.o"
+"03_usart\stm32f4xx_hal_cortex.o"
+"03_usart\stm32f4xx_hal.o"
+"03_usart\stm32f4xx_hal_exti.o"
+"03_usart\system_stm32f4xx.o"
+--feedback "03_USART\03_USART.fed" --feedback_image=none
+--strict --scatter "03_USART\03_USART.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "03_USART.map" -o 03_USART\03_USART.axf

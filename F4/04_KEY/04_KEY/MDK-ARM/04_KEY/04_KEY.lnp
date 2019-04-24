@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"04_key\startup_stm32f407xx.o"
+"04_key\key.o"
+"04_key\main.o"
+"04_key\stm32f4xx_it.o"
+"04_key\stm32f4xx_hal_msp.o"
+"04_key\stm32f4xx_hal_tim.o"
+"04_key\stm32f4xx_hal_tim_ex.o"
+"04_key\stm32f4xx_hal_uart.o"
+"04_key\stm32f4xx_hal_rcc.o"
+"04_key\stm32f4xx_hal_rcc_ex.o"
+"04_key\stm32f4xx_hal_flash.o"
+"04_key\stm32f4xx_hal_flash_ex.o"
+"04_key\stm32f4xx_hal_flash_ramfunc.o"
+"04_key\stm32f4xx_hal_gpio.o"
+"04_key\stm32f4xx_hal_dma_ex.o"
+"04_key\stm32f4xx_hal_dma.o"
+"04_key\stm32f4xx_hal_pwr.o"
+"04_key\stm32f4xx_hal_pwr_ex.o"
+"04_key\stm32f4xx_hal_cortex.o"
+"04_key\stm32f4xx_hal.o"
+"04_key\stm32f4xx_hal_exti.o"
+"04_key\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "04_KEY\04_KEY.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "04_KEY.map" -o 04_KEY\04_KEY.axf

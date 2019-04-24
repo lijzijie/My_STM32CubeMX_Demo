@@ -1,0 +1,50 @@
+Configuration	LED
+STM32CubeMX 	5.1.0
+Date	04/02/2019
+MCU	STM32F417ZGTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+21	PF9	GPIO_Output	LED0
+22	PF10	GPIO_Output	LED1
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+21	PF9	GPIO_Output	LED0
+22	PF10	GPIO_Output	LED1
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : LED
+Project Folder : D:\8-studyMakeMeHappy\26_stm32cube\03_project\02_LED\LED
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F4 V1.24.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
